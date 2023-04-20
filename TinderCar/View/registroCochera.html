@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinderCar</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/styleRegistro.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html">
+          <img class="nav-logo" src="imagenes/iconoAuto.png">
+        </a>
+        <button class="nav-btnNavbar" type="menu" id="btnNavbar">
+          <img src="imagenes/menu.png" alt="menu">
+        </button>
+        <ul class="nav-menu" id="responsiveMenu">
+          </li>
+          <li class="nav-menu-item">
+            <a href="#Acerca-de-nosotros" class="nav-menu-link">Acerca de nosotros</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="registroVehiculo.html" class="nav-menu-link"> Registra tu vehículo</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+<main>
+    <section>
+      <form action="pantallaPropietario.html" method="post" class="form" id="form">
+        <div class="form-title">
+          <h3>Registrate</h3>
+        </div>
+        <div class="form-group" id="groupFirstname">
+          <label for="userName" class="form-group-label"> Nombre de Cochera </label>
+          <input type="text" class="form-group-input" name="firstName" id="firstName" >
+          <p class="form-group-errorText">El nombre tiene que ser de 4 a 16 letras.</p>
+        </div>
+        <div class="form-group" id="groupLastname">
+          <label for="lastname" class="form-group-label"> Ubicación </label>
+          <input type="text" class="form-group-input" name="lastname" id="lastname">
+          <p class="form-group-errorText">El apellido tiene que ser de 4 a 16 letras.</p>
+        </div>
+       <div class="form-group" id="groupEmail">
+          <label for="email" class="form-group-label">Autos que admite</label>
+          <input type="email" class="form-group-input" name="email" id="email">
+          <p class="form-group-errorText">El email solo puede contener letras, numeros, puntos, guíones y guíon bajo.
+          </p>
+        </div>
+
+        <div class="form-group" id="groupPhone">
+          <label for="phone" class="form-group-label"> Disponibilidad de la Cochera </label>
+          <input type="number" class="form-group-input" name="phone" id="phone">
+          <p class="form-group-errorText">El telefono solo puede contener numeros y el maximo son 14 digitos.</p>
+        </div>
+
+        
+        <div class="check-box-conteiner">
+        <div class="titulo">
+        <h5> &nbsp Posibilidad de alquiler por tiempo </h5>
+      </div>
+
+
+        <div class="check">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="mensual" >
+          <label class="form-check-label" for="mensual">
+            Mensual
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="trimestral">
+          <label class="form-check-label" for="trimestral">
+            Trimestral
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="=semestral">
+          <label class="form-check-label" for="semestral">
+            Semestral
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="anual" checked="">
+          <label class="form-check-label" for="anual">
+            Anual
+          </label>
+        </div>
+      </div>
+    </div>
+
+        <div class="form-messaje-error" id="formMessaje">
+          <p><b>Error</b> Por favor rellena el formulario correctamente.</p>
+        </div>
+        <div class="form-messaje-done" id="formDone">
+          <p>Formulario enviado correctamente.</p>
+        </div> 
+        <div class="form-group form-group-btn">
+          <button type="submit" class="form-group-btn-send" > Registrar </button>
+          <a href="index.html" class="form-group-link"> volver </a>
+        </div>
+      </form>
+    </section>
+  </main>
+    <footer>
+      <div class="footer">
+        <div class="grupo1">
+    
+          <div class="box"> 
+            <h2> SOBRE NOSOTROS</h2>
+            <p>
+              TinderCar es una página que busca facilitar la conexión entre usuarios de automiles y propietarios de cocheras. Lo que buscamos es
+              ayudar a los aumovilistas a encontrar cocheras de manera eficaz y sencilla para guardar su vehículo, como también facilitar a los dueños
+              de las cocheras la difusión de las mismas y poder administrarlas de la mejor manera posible.
+            </p>
+  
+            <p>
+              <a href="#"> Nuestro Blog </a>
+            </p>
+          </div>
+          
+          <div class="box"> 
+            <h2> SEGUINOS </h2>
+          
+          <div class="logos">
+            <a href="https://www.facebook.com/">  Facebook </a>
+            <a href="https://twitter.com/">  Twitter </a>
+            <a href="https://www.instagram.com/">  Instagram </a>
+           
+            <!--<img src="imagenes/icono facebook.png" alt="facebook">
+            <img src="imagenes/icono instagram.png" alt="instagram">
+            <img src="imagenes/icono twitter.png" alt="twitter">-->
+          </div>
+  
+        </div>
+          
+        </div>
+      
+  
+      <div class="grupo2"> 
+      
+      <small>&copy; 2022 <b> TinderCar </b> - Todos los derechos Reservados.</small>
+    </div>
+  
+    </div>
+    </footer>
+      <script src="js/nav.js"></script>
+  </body>
+</html>
